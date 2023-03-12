@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <body>
+        <main>
+          <div class="form">
+            
+            <form id="form" action="/" method="get">
+              <div class="form_group">
+                <input
+                  type="text"
+                  id="f-name"
+                  name="name"
+                  placeholder="First name"
+                />
+               <aside id="fn_err_img" ></aside>
+                <span id="first_name_err"></span>
+              </div>
+    
+              <div class="form_group">
+                <input
+                  type="text"
+                  id="l-name"
+                  name="name"
+                  placeholder="Last name"
+                />
+                <span id="last_name_err"></span>
+                <aside id="ln_err_img" ></aside>
+              </div>
+              <div class="form_group">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email Address"
+                />
+                <span id="email_err"></span>
+                <aside id="em_err_img"></aside>
+              </div>
+              <div class="form_group">
+                <input
+                  type="password"
+                  name=""
+                  placeholder="Password"
+                  id="password"
+                />
+                <span id="password_err"></span>
+                <aside id="pd_err_img"></aside>
+              </div>
+    
+              <button type="submit" id="button" class="btnn" onclick="openPopup()">
+               Submit
+              </button>
+
+              <div class="popup" id="popup">
+                 <h2>Thank you!</h2>
+                 <p>your details have been successfully submitted. Thanks!</details></p>
+                 <button type="button" onclick="closePopup()">ok</button>
+              </div>
+              <p class="footer"> 
+               copyright &2023
+                <a href="#" class="tc"> Terms and Services.</a>
+              </p>
+            </form>
+          </div>
+        </main>
+</body>
+<script src="script.js"></script>
+</html>
